@@ -26,5 +26,5 @@ first_info.ParseFromString(serializeToString)
 for person in first_info.people:
     print("name: {}, id: {}, email: {}".format(person.name, person.id, person.email))
 
-    for phone_number in person.phones:
-        print(phone_number.number, phone_number.type)
+for phone_number in person.phones:
+    print(phone_number.number, phone_number.type)
